@@ -33,31 +33,32 @@ Apesar dessas limitações, o projeto foi estruturado de forma que possa ser fac
 
 ## 📁 Estrutura do Projeto
 
+```
 .
 ├── bronze/
-│ └── 01_ingestao_bronze.py
+│   └── 01\_ingestao\_bronze.py
 ├── silver/
-│ └── 02_transformacoes_silver.py
+│   └── 02\_transformacoes\_silver.py
 ├── gold/
-│ ├── 03_dim_uf.py
-│ ├── 04_dim_calendario.py
-│ ├── 05_dim_importancia.py
-│ └── 06_fato_venda.py
-├── feature_store/
-│ └── 07_fs_historico_envios_corredor.py
+│   ├── 03\_dim\_uf.py
+│   ├── 04\_dim\_calendario.py
+│   ├── 05\_dim\_importancia.py
+│   └── 06\_fato\_venda.py
+├── feature\_store/
+│   └── 07\_fs\_historico\_envios\_corredor.py
 ├── qualidade/
-│ ├── define_schema.py
-│ ├── valida_integridade.py
-│ └── valida_presenca_coluna.py
+│   ├── define\_schema.py
+│   ├── valida\_integridade.py
+│   └── valida\_presenca\_coluna.py
 ├── testes/
-│ ├── 00-run_all.py
-│ ├── 01-teste_schemas.py
-│ ├── 02-teste_integracao_fato.py
-│ └── 03-teste_nulos_duplicados.py
+│   ├── 00-run\_all.py
+│   ├── 01-teste\_schemas.py
+│   ├── 02-teste\_integracao\_fato.py
+│   └── 03-teste\_nulos\_duplicados.py
 ├── 00-orquestrador.py
 ├── LICENSE
 └── README.md
-
+```
 
 ---
 
