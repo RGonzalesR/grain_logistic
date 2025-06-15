@@ -14,9 +14,9 @@ features:
     description: "Preço do produto em R$"
   - name: qtd_itens
     description: "Quantidade de produtos enviados no mesmo pacote"
-  - name: importância
+  - name: importancia
     description: "Urgência de envio do produto (baixo, médio, alto)"
-  - name: gênero
+  - name: genero
     description: "Gênero do cliente (Masculino ou Feminino)"
   - name: desconto
     description: "Desconto oferecido na compra específica"
