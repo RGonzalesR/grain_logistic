@@ -1,0 +1,8 @@
+# YAML file for Dimensão Importância
+features:
+  - name: id_importancia
+    description: "Identificador único da importância (hash da descrição e número de importância)"
+  - name: ds_importancia
+    description: "Descrição textual do nível de importância"
+  - name: nr_importancia
+    description: "Nível de importância (1-5)"

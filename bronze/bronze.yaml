@@ -1,0 +1,34 @@
+# YAML file for Bronze Layer - Grain Logistic Shipping
+features:
+  - name: id_envio
+    description: "Número de identificação do envio"
+  - name: corredor_de_armazenagem
+    description: "Em qual corredor do armazém estava localizado o produto enviado"
+  - name: metodo_de_envio
+    description: "Método de envio utilizado (transportadora, sedex ou PAC)"
+  - name: ligações_do_cliente
+    description: "Quantas ligações os clientes realizaram à empresa sobre o envio"
+  - name: avaliação_do_cliente
+    description: "Avaliação do cliente entre uma nota de 1 a 5"
+  - name: preço
+    description: "Preço do produto em R$"
+  - name: qtd_itens
+    description: "Quantidade de produtos enviados no mesmo pacote"
+  - name: importância
+    description: "Urgência de envio do produto (baixo, médio, alto)"
+  - name: gênero
+    description: "Gênero do cliente (Masculino ou Feminino)"
+  - name: desconto
+    description: "Desconto oferecido na compra específica"
+  - name: peso_g
+    description: "Peso de cada produto em gramas"
+  - name: Chegou_no_tempo
+    description: "Verificação se o produto chegou dentro do tempo estipulado (1 para sim, 0 para não)"
+  - name: Destino
+    description: "Unidade Federativa de destino"
+  - name: DataEnvio
+    description: "Data em que o produto foi enviado"
+  - name: dataEntrega
+    description: "Data em que o produto foi entregue"
+  - name: avaliacaoEntrega
+    description: "Avaliação do cliente sobre a entrega, de 0 a 5 estrelas"

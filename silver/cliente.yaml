@@ -1,0 +1,14 @@
+# YAML file for Cliente DataFrame
+features:
+  - name: id_envio
+    description: "Identificador único da operação de envio"
+  - name: qt_ligacoes_do_cliente
+    description: "Quantidade de ligações realizadas pelo cliente"
+  - name: ds_genero
+    description: "Descrição do gênero do cliente (ex: M, F)"
+  - name: nr_avaliacao_do_cliente
+    description: "Número dado pelo cliente para avaliar o serviço"
+  - name: nr_avaliacao_entrega
+    description: "Número dado pelo cliente para avaliar a entrega"
+  - name: data_ingestao
+    description: "Data e hora em que houve a ingestão do registro na Silver"

@@ -1,0 +1,28 @@
+# YAML file for Fato Venda
+features:
+  - name: id_envio
+    description: "Identificador único do envio"
+  - name: id_uf
+    description: "Identificador único da UF (FK para dimensão UF)"
+  - name: id_importancia
+    description: "Identificador único da importância (FK para dimensão Importância)"
+  - name: id_calendario_envio
+    description: "Identificador único do calendário de envio (FK para dimensão Calendário)"
+  - name: id_calendario_entrega
+    description: "Identificador único do calendário de entrega (FK para dimensão Calendário)"
+  - name: ds_corredor_de_armazenagem
+    description: "Descrição do corredor de armazenagem"
+  - name: qt_produtos_adquiridos
+    description: "Quantidade de produtos adquiridos"
+  - name: vl_preco_unitario
+    description: "Valor unitário do produto"
+  - name: pc_desconto
+    description: "Percentual de desconto aplicado"
+  - name: vl_receita_total
+    description: "Valor total da receita gerada"
+  - name: vl_peso_total
+    description: "Peso total dos produtos enviados"
+  - name: qt_tempo_entrega_dias
+    description: "Quantidade de dias para entrega"
+  - name: in_chegou_no_tempo
+    description: "Indicador se o envio chegou no tempo previsto"

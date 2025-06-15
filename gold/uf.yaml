@@ -1,0 +1,8 @@
+# YAML file for Dimensão UF
+features:
+  - name: id_uf
+    description: "Identificador único da UF (hash da descrição da UF)"
+  - name: ds_uf
+    description: "Descrição completa da UF"
+  - name: sg_uf
+    description: "Sigla da UF"

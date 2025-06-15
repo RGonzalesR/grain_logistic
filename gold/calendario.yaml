@@ -1,0 +1,16 @@
+# YAML file for Dimensão Calendário
+features:
+  - name: id_calendario
+    description: "Identificador único do calendário (hash da data completa)"
+  - name: dt_completa
+    description: "Data completa (envio ou entrega)"
+  - name: nr_ano
+    description: "Ano da data"
+  - name: nr_mes
+    description: "Número do mês da data"
+  - name: nr_dia
+    description: "Número do dia da data"
+  - name: ds_dia_da_semana
+    description: "Descrição do dia da semana"
+  - name: ds_mes
+    description: "Descrição do mês"

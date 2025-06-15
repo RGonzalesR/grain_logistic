@@ -1,0 +1,14 @@
+# YAML file for Produto DataFrame
+features:
+  - name: id_envio
+    description: "Identificador único da operação de envio"
+  - name: vl_preco
+    description: "Valor do produto em reais"
+  - name: qt_itens
+    description: "Quantidade de produtos enviados no mesmo pacote"
+  - name: vl_peso_gramas
+    description: "Peso de cada produto em gramas"
+  - name: pc_desconto
+    description: "Porcentagem de desconto aplicado à compra"
+  - name: data_ingestao
+    description: "Data e hora em que houve a ingestão do registro na Silver"

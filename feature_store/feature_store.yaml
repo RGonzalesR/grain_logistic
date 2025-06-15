@@ -1,0 +1,36 @@
+# YAML file for Feature Store - Histórico de Envios por Corredor
+features:
+  - name: ds_corredor_de_armazenagem
+    description: "Descrição do corredor de armazenagem"
+  - name: dt_historico
+    description: "Data histórica para análise acumulada"
+  - name: qt_envios_acumulado
+    description: "Quantidade acumulada de envios até a data histórica"
+  - name: qt_total_itens
+    description: "Quantidade total de itens enviados até a data histórica"
+  - name: qt_media_itens
+    description: "Quantidade média de itens por envio até a data histórica"
+  - name: vl_total_receita
+    description: "Valor total de receita acumulada até a data histórica"
+  - name: vl_media_receita
+    description: "Valor médio de receita por envio até a data histórica"
+  - name: vl_peso_medio
+    description: "Peso médio dos envios até a data histórica"
+  - name: vl_medio_tempo_entrega
+    description: "Tempo médio de entrega dos envios até a data histórica"
+  - name: pc_entregas_no_prazo
+    description: "Percentual de entregas realizadas no prazo até a data histórica"
+  - name: vl_medio_ligacoes_cliente
+    description: "Média de ligações realizadas pelo cliente até a data histórica"
+  - name: vl_medio_avaliacao_cliente
+    description: "Média das avaliações realizadas pelo cliente até a data histórica"
+  - name: vl_medio_avaliacao_entrega
+    description: "Média das avaliações realizadas sobre a entrega até a data histórica"
+  - name: qt_envios_feminino
+    description: "Quantidade de envios realizados para o público feminino até a data histórica"
+  - name: qt_envios_masculino
+    description: "Quantidade de envios realizados para o público masculino até a data histórica"
+  - name: pc_envio_publico_feminino
+    description: "Percentual de envios realizados para o público feminino até a data histórica"
+  - name: pc_envio_publico_masculino
+    description: "Percentual de envios realizados para o público masculino até a data histórica"

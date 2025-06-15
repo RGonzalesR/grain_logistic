@@ -1,0 +1,42 @@
+# YAML file for Envio DataFrame
+features:
+  - name: id_envio
+    description: "Identificador único da operação de envio"
+  - name: id_corredor_de_armazenagem
+    description: "Identificador do corredor de armazenagem"
+  - name: ds_metodo_de_envio
+    description: "Descrição do método de envio utilizado"
+  - name: ds_importancia
+    description: "Descrição do nível de importância do envio"
+  - name: nr_importancia
+    description: "Número do nível de importância do envio"
+  - name: ds_uf_destino
+    description: "Estado Federativo de destino do envio"
+  - name: in_chegou_no_tempo
+    description: "Indicador de que o produto chegou no tempo esperado"
+  - name: ds_dia_da_semana_envio
+    description: "Descrição do dia da semana em que o envio foi realizado"
+  - name: nr_dia_envio
+    description: "Número do dia do mês em que o envio foi realizado"
+  - name: ds_mes_envio
+    description: "Descrição do mês em que o envio foi realizado"
+  - name: nr_ano_envio
+    description: "Ano em que o envio foi realizado"
+  - name: ds_dia_da_semana_entrega
+    description: "Descrição do dia da semana em que a entrega foi realizada"
+  - name: nr_dia_entrega
+    description: "Número do dia do mês em que a entrega foi realizada"
+  - name: nr_ano_entrega
+    description: "Ano em que a entrega foi realizada"
+  - name: nr_mes_entrega
+    description: "Mês em numeral em que a entrega foi realizada"
+  - name: ds_mes_entrega
+    description: "Nome do mês em que a entrega foi realizada"
+  - name: nr_mes_envio
+    description: "Mês em numeral em que o envio foi realizado"
+  - name: dt_envio
+    description: "Data em que o envio foi realizado"
+  - name: dt_entrega
+    description: "Data em que a entrega foi realizada"
+  - name: data_ingestao
+    description: "Data e hora em que houve a ingestão do registro na Silver"
