@@ -1,0 +1,61 @@
+resources:
+  jobs:
+    grain_logistic_pipeline:
+      name: grain_logistic_pipeline
+      tasks:
+        - task_key: Bronze
+          notebook_task:
+            notebook_path: /Workspace/Users/renan.gonzales@usp.br/grain_logistic/bronze/01_ingestao_bronze_db_free
+            base_parameters:
+              caminho_raw: /Volumes/workspace/default/main/data/landing/grain_logistic_shipping.csv
+              nome_tabela: grain_logistic_shipping
+            source: WORKSPACE
+        - task_key: Silver
+          depends_on:
+            - task_key: Bronze
+          notebook_task:
+            notebook_path: /Workspace/Users/renan.gonzales@usp.br/grain_logistic/silver/02_transformacoes_silver_db_free
+            base_parameters:
+              tabela_bronze: bronze.grain_logistic_shipping
+            source: WORKSPACE
+        - task_key: Dim_UF
+          depends_on:
+            - task_key: Silver
+          notebook_task:
+            notebook_path: /Workspace/Users/renan.gonzales@usp.br/grain_logistic/gold/03_dim_uf_db_free
+            base_parameters:
+              tabela_envios: silver.envios
+            source: WORKSPACE
+        - task_key: Dim_calendario
+          depends_on:
+            - task_key: Silver
+          notebook_task:
+            notebook_path: /Workspace/Users/renan.gonzales@usp.br/grain_logistic/gold/04_dim_calendario_db_free
+            base_parameters:
+              tabela_envios: silver.envios
+            source: WORKSPACE
+        - task_key: Dim_importancia
+          depends_on:
+            - task_key: Silver
+          notebook_task:
+            notebook_path: /Workspace/Users/renan.gonzales@usp.br/grain_logistic/gold/05_dim_importancia_db_free
+            base_parameters:
+              tabela_envios: silver.envios
+            source: WORKSPACE
+        - task_key: FatoVenda
+          depends_on:
+            - task_key: Dim_UF
+            - task_key: Dim_calendario
+            - task_key: Dim_importancia
+          notebook_task:
+            notebook_path: /Workspace/Users/renan.gonzales@usp.br/grain_logistic/gold/06_fato_venda_db_free
+            source: WORKSPACE
+        - task_key: FeatureStore
+          depends_on:
+            - task_key: FatoVenda
+          notebook_task:
+            notebook_path: /Workspace/Users/renan.gonzales@usp.br/grain_logistic/feature_store/07_fs_historico_envios_corredor_free_db
+            source: WORKSPACE
+      queue:
+        enabled: true
+      performance_target: STANDARD
