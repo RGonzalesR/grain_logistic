@@ -157,10 +157,15 @@ Foi desenvolvido um dashboard em Power BI para visualização e análise dos dad
 Principais indicadores presentes no dashboard:
 
 ✅ Entrega no Prazo (%): Percentual de pacotes que chegaram dentro do prazo estipulado.
+
 📍 Mapa de calor por UF: Visualiza a performance de entrega pontual por estado.
+
 📈 Receita x Mês: Evolução mensal da receita, segmentada pelo nível de urgência do pedido.
+
 🧭 Year to Date (YTD): Comparativo da receita acumulada no ano atual e no ano anterior.
+
 ⚖️ Peso Total por Ano: Volume total movimentado em toneladas, ano a ano.
+
 ⏱️ Média de Dias para Entrega: Tempo médio de entrega por estado (UF).
 
 O arquivo `.pbix` se encontra no repositório com o nome `relatorio_grain_logistics.pbix`, podendo ser customizado ou conectado diretamente ao Lakehouse via Databricks Connector.
